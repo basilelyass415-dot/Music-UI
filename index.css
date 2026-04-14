@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: system;
+}
+body{
+  background: #0b0b1a;
+}
+.contanier{
+  height: 90%;
+  width;: 80%;
+  background: linear-gradinet(180deg, #1a1a2e 0%, #0b0b1a 100%);
+  border-radius: 20px;
+}
+.spn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+span{
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 23px;
+}
+span.w{
+  color: #594e4ecc;
+  text-transform: capitalize;
+  font-size: 23px;
+  margin-right: 10px;
+}
+.image{
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+}
+.image img{
+  width: 85%;
+  height: 100% ;
+  border-radius: 20px;
+}
+.info h1{
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 2px;
+  margin: 1rem ;
+  
+}
+.info h4{
+  text-transform: capitalize;
+  color: gray;
+  margin: 7px 13px;
+  font-weight: bold;
+}
+.info h4 span.ss{
+  background: gray ;
+  color: #0b0b1a;
+  padding: 4px 6px ;
+  border-radius: 10px;
+  font-size: 10px;
+}
+/* إخفاء الشكل الافتراضي للمتصفح */
+.seek-bar {
+    -webkit-appearance: none;
+    width: 90%;
+    background: #333; /* لون الخط الرمادي (الجزء المتبقي) */
+    height: 4px;      /* سماكة الخط */
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    margin: 15px 15px;
+}
+
+/* تنسيق النقطة البيضاء (للمتصفحات مثل Chrome و Edge) */
+.seek-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white; /* لون النقطة */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* الجزء الملون (الذي تم تشغيله) */
+/* ملاحظة: لجعل الخط أبيض قبل النقطة نستخدم خلفية متدرجة (Gradient) */
+.seek-bar {
+    background: linear-gradient(to right, white 80%, #333 80%);
+}
+
+.time-labels {
+    display: flex;
+    justify-content: space-between;
+    color: #888;
+    font-size: 12px;
+    margin-top: 8px;
+    direction: ltr; /* لجعل الأرقام تظهر بشكل صحيح */
+    margin: 20px ;
+}
+.time-labels span{
+    color: gray;
+}
+.controls{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center ;
+}
+i{
+  color: #EEE;
+  font-size: 30px;
+}
